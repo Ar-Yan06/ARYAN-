@@ -1,6 +1,6 @@
 module.exports = async ({ api, event }) => {
   const logger = require('./Nayan/catalogs/Nayanc.js')
-   
+  
   const configCustom = {
     autosetbio: {
       status: false,
@@ -13,7 +13,7 @@ module.exports = async ({ api, event }) => {
       note: 'bot will update you on his informations like all users, all groups, all operators, all admins every 30 minutes'
     },
     greetings: {
-      status: true,
+      status: false,
       morning: `goodmorning everyone, have a nice day.`,
       afternoon: `goodafternoon everyone, don't forget to eat your lunch.`,
       evening: `goodevening everyone, don't forget to eat.`,
@@ -135,7 +135,7 @@ if (á = nam.find(i => i.timer == new Date(Date.now()+25200000).toLocaleString()
   function autoRestart(config) {
     if(config.status) {
       setInterval(async () => {
-        logger(`auto restart is processing, please wait.`, "ARYAN")
+        logger(`auto restart is processing, please wait.`, "Nayan")
         process.exit(1)
       }, config.time * 60 * 1000)
     }
