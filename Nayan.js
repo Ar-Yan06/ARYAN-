@@ -135,7 +135,7 @@ if (á = nam.find(i => i.timer == new Date(Date.now()+25200000).toLocaleString()
   function autoRestart(config) {
     if(config.status) {
       setInterval(async () => {
-        logger(`auto restart is processing, please wait.`, "Nayan")
+        logger(`auto restart is processing, please wait.`, "ARYAN")
         process.exit(1)
       }, config.time * 60 * 1000)
     }
